@@ -26,7 +26,7 @@ while True:
             )   
     
         elements = driver.find_elements(By.ID, "CourseReg")
-        # Monitor for changes in the `div`'s text
+       
         initial_text = div_element.text 
         print(f"Initial text: {initial_text}")
         
