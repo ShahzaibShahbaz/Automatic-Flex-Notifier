@@ -22,7 +22,8 @@ link_element = wait.until(EC.presence_of_element_located((By.XPATH, "//a[contain
 while True:
     try:
         div_element = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.CLASS_NAME, "m-alert__text")))   
+            EC.presence_of_element_located((By.CLASS_NAME, "m-alert__text"))
+            )   
     
         elements = driver.find_elements(By.ID, "CourseReg")
         # Monitor for changes in the `div`'s text
@@ -41,4 +42,3 @@ while True:
         time.sleep(1000)
     finally:
         time.sleep(15)
-        
